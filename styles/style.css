@@ -8,7 +8,7 @@ html {
     --item-color: #0032A0;
     --hg-color: #FFFFFF;
     
-    background-image: url(/assets/ven-aqui.webp);
+    background-color: var(--bg-color);
     color: var(--hg-color);
     font-family: "Bebas Neue", sans-serif;
 }
