@@ -1,0 +1,74 @@
+body{
+    background-color: transparent;
+}
+
+html {
+    --bg-color: #000000;
+    --container-color: #DA291C;
+    --item-color: #0032A0;
+    --hg-color: #FFFFFF;
+    
+    background-image: url(/assets/ven-aqui.webp);
+    color: var(--hg-color);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+div.container{
+    /* border: 0.5px solid var(--hg-color); */
+    height: auto;
+}
+
+div.container div.item#link{
+    color: var(--hg-color);
+    font-family: "Bebas Neue", sans-serif;
+    text-align: end;
+    font-size: 20px;
+}
+
+div.container div.item#link #link-uno:hover{
+    color: var(--hg-color);
+    font-size: 30px;
+}
+
+div.container div.item#link #link-dos:hover{
+    color: var(--hg-color);
+    font-size: 30px;
+}
+
+div.container div.item#link #link-tres:hover{
+    color: var(--hg-color);
+    font-size: 30px;
+}
+
+div.container div.item#link #link-cuatro:hover{
+    color: var(--hg-color);
+    font-size: 30px;
+}
+
+div.container div.item#primer-encabezado{
+    text-align: center;
+    font-size: 40px;
+}
+
+div.container div.item#parrafo-uno{
+    text-align: justify;
+    font-family: "Boldonse", system-ui;
+    font-size: 15px;
+    color: var(--hg-color);
+}
+
+div.container div.row{
+    text-align: center;
+}
+
+div.container div.row div.col-sm{
+    display: grid;
+    place-items: center;
+    min-height: auto;
+}
+
+form.was-validated{
+    color: var(--container-color);
+    font-family: "Boldonse", system-ui;
+    font-size: 10px;
+}
