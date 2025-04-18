@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- Configuración Prevía -->
     <link rel="stylesheet" href="./styles/style.css">
     <!-- Primer Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,46 +15,116 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
-    <title>Inicio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="item" id="link">
-            <a href="./discografia.html" id="link-uno" style="color: inherit;">Discografía</a>
-            <a href="https://open.spotify.com/intl-es/artist/3RTAXX6KGdljBsOIupyZgT?si=K6k5NPHiSg-8AhRuYVd5GQ"
-                target="_blank" id="link-dos" style="color: inherit;">Escuchalos</a>
-            <a href="./formulario.html" id="link-tres" style="color: inherit;">Formulario</a>
+    <!-- container-fluid - Ajusta el contenido a el tamaño de la pantalla -->
+    <!-- px-3 px-md-4 px-lg-5 - Agrega un margen responsivo a todo el contenido -->
+    <div class="container-fluid px-3 px-md-4 px-lg-5">
+        <!-- mb-3 mb-md-4 mb-lg-5 - Agrega un margen responsivo a las filas  -->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" style="color: inherit;" href="./index.html">Los Bunkers</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./discografia.html" id="link-uno"
+                                        style="color: inherit;">Discografía</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                        href="https://open.spotify.com/intl-es/artist/3RTAXX6KGdljBsOIupyZgT?si=K6k5NPHiSg-8AhRuYVd5GQ"
+                                        target="_blank" id="link-dos" style="color: inherit;">Spotify</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./formulario.html" id="link-tres"
+                                        style="color: inherit;">Formulario</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1 id="primer-encabezado">LOS BUNKERS</h1>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-4 mb-lg-5">
+            <div class="col">
+                <div id="carouselInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./assets/barrio-estacion.webp" class="d-block mx-auto w-50" alt="Barrio Estación">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/cancion-de-lejos.webp" class="d-block mx-auto w-50" alt="Canción de Lejos">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/la-velocidad-de-la-luz.webp" class="d-block mx-auto w-50" alt="La Velocidad de la Luz">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/vida-de-perros.webp" class="d-block mx-auto w-50" alt="Vida de Perros">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./assets/mtv-unplegged.webp" class="d-block mx-auto w-50" alt="MTV Unplegged">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        <div class="row mb-3 mb-md-4 mb-lg-5">
+            <div class="col">
+                <p id="parrafo-uno">
+                    Los Bunkers es una banda de rock chilena oriunda de Concepción, activa de 1999 a 2014, y del 2022 al
+                    presente,
+                    con una breve reunión en 2019. El grupo estuvo compuesto la mayor parte de su historia por los
+                    hermanos
+                    Francisco (voz, guitarra, teclados) y Mauricio Durán (guitarra), Álvaro (voz, guitarra) y Gonzalo
+                    López
+                    (bajo),
+                    y Mauricio Basualto (batería).
+
+                    Considerada como una de las bandas más importantes y exitosas de la música popular chilena, destacó
+                    por su «chilenización» del rock clásico, fusionando sonidos provenientes de la raíz folclórica
+                    (esencialmente de
+                    la nueva canción chilena) con el estilo de grupos anglosajones como The Beatles y Cream, y de
+                    coterráneos
+                    penquistas como Los Tres y Santos Dumont.Aunque con el paso del tiempo la banda llegaría a
+                    experimentar
+                    con diversos estilos musicales que marcarían el sonido de sus últimos álbumes, tales como el
+                    britpop, la
+                    electrónica y la psicodelia.
+                </p>
+            </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="item" id="primer-encabezado">
-            <h1>LOS BUNKERS</h1>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="item" id="parrafo-uno">
-            <p id="parrafo-uno">
-                Los Bunkers es una banda de rock chilena oriunda de Concepción, activa de 1999 a 2014, y del 2022 al
-                presente,
-                con una breve reunión en 2019. El grupo estuvo compuesto la mayor parte de su historia por los hermanos
-                Francisco (voz, guitarra, teclados) y Mauricio Durán (guitarra), Álvaro (voz, guitarra) y Gonzalo López
-                (bajo),
-                y Mauricio Basualto (batería).
-    
-                Considerada como una de las bandas más importantes y exitosas de la música popular chilena, destacó
-                por su «chilenización» del rock clásico, fusionando sonidos provenientes de la raíz folclórica
-                (esencialmente de
-                la nueva canción chilena) con el estilo de grupos anglosajones como The Beatles y Cream, y de coterráneos
-                penquistas como Los Tres y Santos Dumont.Aunque con el paso del tiempo la banda llegaría a experimentar
-                con diversos estilos musicales que marcarían el sonido de sus últimos álbumes, tales como el britpop, la
-                electrónica y la psicodelia.
-            </p>
-        </div>
-    </div>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
 
 </body>
 
