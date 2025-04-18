@@ -9,12 +9,6 @@ html {
     --hg-color: #F5EEDC;
     
     background-image: url(/assets/ven-aqui.webp);
-    background-size: auto;
-}
-
-.navbar {
-    background-color: var(--bg-color);
-    font-family: "Boldonse", system-ui;
     color: var(--hg-color);
     font-size: 16px;
 }
