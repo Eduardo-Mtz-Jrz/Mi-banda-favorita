@@ -4,169 +4,309 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discografia</title>
-    <!-- Primer Font Family -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- Bootstrap -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Discografía</title>
+    <!-- Configuración Prevía -->
     <link rel="stylesheet" href="./styles/style.css">
+    <!-- Primer Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- Segundo Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="item" id="link">
-            <a href="./index.html" id="link-cuatro" style="color: inherit;">Inicio</a>
-            <a href="./formulario.html" id="link-tres" style="color: inherit;">Formulario</a>
-        </div>
-    </div>
-
-    <!-- Card y lista de Boostrap -->
-    <div class="container">
+    <div class="container-fluid px-3 px-md-4 px-lg-5">
         <div class="row">
-            <div class="col-sm border">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="./assets/barrio-estacion.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Barrio Estación</h4>
-                        <p class="card-text">El título proviene del mismísimo Barrio Estación, un característico barrio
-                            bohemio de la ciudad de Concepción, ciudad cuna de la banda.</p>
-                        <a href="https://open.spotify.com/intl-es/album/4RiQ802Y3VvSeG1KqlXQNI?si=RvHwIs6wT4m2erhCCehQJg"
-                            class="btn btn-primary">Spotify</a>
+            <div class="col">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" style="color: inherit;" href="./index.html">Los Bunkers</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./discografia.html" id="link-uno"
+                                        style="color: inherit;">Discografía</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active"
+                                        href="https://open.spotify.com/intl-es/artist/3RTAXX6KGdljBsOIupyZgT?si=K6k5NPHiSg-8AhRuYVd5GQ"
+                                        target="_blank" id="link-dos" style="color: inherit;">Spotify</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./formulario.html" id="link-tres"
+                                        style="color: inherit;">Formulario</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div class="col-sm border">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h5>Lanzamiento en 2008</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <h5>Canciones destacadas:</h5>
-                    </li>
-                    <li class="list-group-item">Deudas</li>
-                    <li class="list-group-item">Una nube cualga sobre mi</li>
-                    <li class="list-group-item">Nada nuevo bajo el sol</li>
-                </ul>
+                </nav>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm border">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="./assets/cancion-de-lejos.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Canción de Lejos</h4>
-                        <p class="card-text">Segundo album del grupo, el cual sirvió para consagrarlos como una de las
-                            bandas más importantes de la escena musical chilena.</p>
-                        <a href="https://open.spotify.com/intl-es/album/6mEv2ZSIvmq8hMtnBDPpCK?si=hPbbggqmTHSaWL4xa0uO1Q"
-                            class="btn btn-primary">Spotify</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm border">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h5>Lanzamiento en 2002</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <h5>Canciones destacadas:</h5>
-                    </li>
-                    <li class="list-group-item">Miño</li>
-                    <li class="list-group-item">Las cosas que cambié y dejé por ti</li>
-                    <li class="list-group-item">Cacnión de lejos</li>
-                </ul>
+            <div class="col">
+                <h1 id="segundo-encabezado">Discografía</h1>
             </div>
         </div>
-        <div class="row">
-            <div class="col-sm border">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="./assets/la-velocidad-de-la-luz.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">La Velocidad de la Luz</h4>
-                        <p class="card-text">Este fue su último álbum, antes de que el grupo entrara en receso
-                            indefinido desde comienzos de 2014 hasta mediados de 2022.</p>
-                        <a href="https://open.spotify.com/intl-es/album/7AihR949bXqDLbDfg5EZfG?si=3_pV4CiVRpyS6Aw-5dUhvA"
-                            class="btn btn-primary">Spotify</a>
-                    </div>
+        <div class="row mb-3 mb-md-4 mb-lg-5">
+            <div class="col col-md-4"> <!-- Ajuste del tamaño de columna -->
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#list-item-1">Barrio Estación</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-2">Canción de Lejos</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-3">La Velocidad de la Luz</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-4">Vida de Perros</a>
+                    <a class="list-group-item list-group-item-action" href="#list-item-5">Los Bunkers (MTV Unplegged)</a>
                 </div>
             </div>
-            <div class="col-sm border">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h5>Lanzamiento en 2013</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <h5>Canciones destacadas:</h5>
-                    </li>
-                    <li class="list-group-item">La velocidad de la luz</li>
-                    <li class="list-group-item">Si estas pensando mal de mi</li>
-                    <li class="list-group-item">Bailando solo</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm border">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="./assets/vida-de-perros.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Vida de Perros</h4>
-                        <p class="card-text">Cuarto album de la banda, canciones escritas por los hermanos Francisco y
-                            Mauricio Durán</p>
-                        <a href="https://open.spotify.com/intl-es/album/7MGSMfFEHkrbuDNNUUxJ3Z?si=m_evCUyGRNG4_OYIdFn3xw"
-                            class="btn btn-primary">Spotify</a>
+            <div class="col col-md-8">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example "
+                    tabindex="0">
+                    <h4 id="list-item-1">Barrio Estación</h4>
+                    <p id="parrafo-item-1">
+                        El título proviene del mismísimo Barrio Estación, un característico barrio
+                        bohemio de la ciudad de Concepción, ciudad cuna de la banda.
+                    </p>
+                    <img src="./assets/barrio-estacion.webp" class="d-block mx-auto w-50 mb-3 mb-md-4 mb-lg-5" alt="Barrio Estación">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mb-3 mb-md-4 mb-lg-5" data-bs-toggle="modal" data-bs-target="#unoModal">
+                        Más Información
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="unoModal" tabindex="-1" aria-labelledby="unoModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="unoModalLabel">Barrio Estación</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h5>Lanzamiento en 2008</h5>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Canciones destacadas:</h5>
+                                        </li>
+                                        <li class="list-group-item">Deudas</li>
+                                        <li class="list-group-item">Una nube cualga sobre mi</li>
+                                        <li class="list-group-item">Nada nuevo bajo el sol</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://open.spotify.com/intl-es/album/4RiQ802Y3VvSeG1KqlXQNI?si=RvHwIs6wT4m2erhCCehQJg"
+                                            style="color: inherit;">Spotify</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="list-item-2">Canción de Lejos</h4>
+                    <p id="parrafo-item-2">
+                        Segundo album del grupo, el cual sirvió para consagrarlos como una de las
+                        bandas más importantes de la escena musical chilena.
+                    </p>
+                    <img src="./assets/cancion-de-lejos.webp" class="d-block mx-auto w-50 mb-3 mb-md-4 mb-lg-5"
+                        alt="Canción de Lejos">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mb-3 mb-md-4 mb-lg-5" data-bs-toggle="modal" data-bs-target="#dosModal">
+                        Más Información
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="dosModal" tabindex="-1" aria-labelledby="dosModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="dosModalLabel">Canción de Lejos</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h5>Lanzamiento en 2002</h5>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Canciones destacadas:</h5>
+                                        </li>
+                                        <li class="list-group-item">Miño</li>
+                                        <li class="list-group-item">Las cosas que cambié y dejé por ti</li>
+                                        <li class="list-group-item">Cacnión de lejos</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://open.spotify.com/intl-es/album/6mEv2ZSIvmq8hMtnBDPpCK?si=hPbbggqmTHSaWL4xa0uO1Q"
+                                            style="color: inherit;">Spotify</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="list-item-3">La Velocidad de la Luz</h4>
+                    <p id="parrafo-item-3">
+                        Este fue su último álbum, antes de que el grupo entrara en receso
+                        indefinido desde comienzos de 2014 hasta mediados de 2022.
+                    </p>
+                    <img src="./assets/la-velocidad-de-la-luz.webp" class="d-block mx-auto w-50 mb-3 mb-md-4 mb-lg-5"
+                        alt="La Velocidad de la Luz">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mb-3 mb-md-4 mb-lg-5" data-bs-toggle="modal" data-bs-target="#tresModal">
+                        Más Información
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="tresModal" tabindex="-1" aria-labelledby="tresModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="tresModalLabel">La velocidad de la Luz</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h5>Lanzamiento en 2013</h5>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Canciones destacadas:</h5>
+                                        </li>
+                                        <li class="list-group-item">La velocidad de la luz</li>
+                                        <li class="list-group-item">Si estas pensando mal de mi</li>
+                                        <li class="list-group-item">Bailando solo</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://open.spotify.com/intl-es/album/7AihR949bXqDLbDfg5EZfG?si=3_pV4CiVRpyS6Aw-5dUhvA"
+                                            style="color: inherit;">Spotify</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="list-item-4">Vida de Perros</h4>
+                    <p id="parrafo-item-4">
+                        Cuarto album de la banda, canciones escritas por los hermanos Francisco y
+                        Mauricio Durán.
+                    </p>
+                    <img src="./assets/vida-de-perros.webp" class="d-block mx-auto w-50 mb-3 mb-md-4 mb-lg-5"
+                        alt="Vida de Perros">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mb-3 mb-md-4 mb-lg-5" data-bs-toggle="modal" data-bs-target="#cuatroModal">
+                        Más Información
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cuatroModal" tabindex="-1" aria-labelledby="cuatroModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="cuatroModalLabel">Vida de Perros</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h5>Lanzamiento en 2005</h5>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Canciones destacadas:</h5>
+                                        </li>
+                                        <li class="list-group-item">Te vistes y te vas</li>
+                                        <li class="list-group-item">Ven aquí</li>
+                                        <li class="list-group-item">Y volveré</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://open.spotify.com/intl-es/album/7MGSMfFEHkrbuDNNUUxJ3Z?si=m_evCUyGRNG4_OYIdFn3xw"
+                                            style="color: inherit;">Spotify</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 id="list-item-5">Los Bunkers (MTV Unplegged)</h4>
+                    <p id="parrafo-item-5">
+                        Este es el cuarto álbum en vivo de la banda chilena y es el primer álbum
+                        que cuenta con la integración de Cancamusa como miembro de la banda.
+                    </p>
+                    <img src="./assets/mtv-unplegged.webp" class="d-block mx-auto w-50 mb-3 mb-md-4 mb-lg-5"
+                        alt="MTV Unplegged">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn btn-primary mb-3 mb-md-4 mb-lg-5" data-bs-toggle="modal" data-bs-target="#cincoModal">
+                        Más Información
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="cincoModal" tabindex="-1" aria-labelledby="cincoModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="cincoModalLabel">Los Bunkers (MTV Unplegged)</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <h5>Lanzamiento en 2024</h5>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <h5>Canciones destacadas:</h5>
+                                        </li>
+                                        <li class="list-group-item">Miño</li>
+                                        <li class="list-group-item">Si estás pensando mal de mi</li>
+                                        <li class="list-group-item">Canción para mañana</li>
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <a href="https://open.spotify.com/intl-es/album/3v9WTwGpwKCwYyCLoI3kjj?si=t5xSxIf4RJiGnIdpDZcWiw"
+                                            style="color: inherit;">Spotify</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-sm border">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h5>Lanzamiento en 2005</h5>
-                    </li>
-                    <li class="list-group-item">
-                        <h5>Canciones destacadas:</h5>
-                    </li>
-                    <li class="list-group-item">Te vistes y te vas</li>
-                    <li class="list-group-item">Ven aquí</li>
-                    <li class="list-group-item">Y volveré</li>
-                </ul>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm border">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="./assets/mtv-unplegged.webp" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title">Los Bunkers (MTV Unplegged)</h4>
-                        <p class="card-text">Este es el cuarto álbum en vivo de la banda chilena y es el primer álbum
-                            que cuenta con la integración de Cancamusa como miembro de la banda.</p>
-                        <a href="https://open.spotify.com/intl-es/album/3v9WTwGpwKCwYyCLoI3kjj?si=t5xSxIf4RJiGnIdpDZcWiw"
-                            class="btn btn-primary">Spotify</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm border">
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h5>Lanzamiento en 2024</h5>
-                        </li>
-                        <li class="list-group-item">
-                            <h5>Canciones destacadas:</h5>
-                        </li>
-                        <li class="list-group-item">Miño</li>
-                        <li class="list-group-item">Si estás pensando mal de mi</li>
-                        <li class="list-group-item">Canción para mañana</li>
-                </ul>
             </div>
         </div>
     </div>
 
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+
 </body>
 
 </html>

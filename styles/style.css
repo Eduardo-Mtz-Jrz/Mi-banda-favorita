@@ -1,74 +1,134 @@
-body{
-    background-color: transparent;
+body {
+    background-color: transparent !important;
 }
 
 html {
-    --bg-color: #000000;
-    --container-color: #DA291C;
-    --item-color: #0032A0;
-    --hg-color: #FFFFFF;
+    --bg-color: #183B4E;
+    --container-color: #DDA853;
+    --item-color: #27548A;
+    --hg-color: #F5EEDC;
     
+    background-image: url(/assets/ven-aqui.webp);
+    background-size: auto;
+}
+
+.navbar {
     background-color: var(--bg-color);
+    font-family: "Boldonse", system-ui;
     color: var(--hg-color);
-    font-family: "Bebas Neue", sans-serif;
+    font-size: 16px;
 }
 
-div.container{
-    /* border: 0.5px solid var(--hg-color); */
-    height: auto;
-}
-
-div.container div.item#link{
-    color: var(--hg-color);
-    font-family: "Bebas Neue", sans-serif;
-    text-align: end;
+#link-uno:hover, #link-dos:hover, #link-tres:hover, #link-cuatro:hover {
     font-size: 20px;
 }
 
-div.container div.item#link #link-uno:hover{
-    color: var(--hg-color);
-    font-size: 30px;
-}
-
-div.container div.item#link #link-dos:hover{
-    color: var(--hg-color);
-    font-size: 30px;
-}
-
-div.container div.item#link #link-tres:hover{
-    color: var(--hg-color);
-    font-size: 30px;
-}
-
-div.container div.item#link #link-cuatro:hover{
-    color: var(--hg-color);
-    font-size: 30px;
-}
-
-div.container div.item#primer-encabezado{
-    text-align: center;
-    font-size: 40px;
-}
-
-div.container div.item#parrafo-uno{
-    text-align: justify;
-    font-family: "Boldonse", system-ui;
-    font-size: 15px;
-    color: var(--hg-color);
-}
-
-div.container div.row{
-    text-align: center;
-}
-
-div.container div.row div.col-sm{
-    display: grid;
-    place-items: center;
-    min-height: auto;
-}
-
-form.was-validated{
+#primer-encabezado {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
     color: var(--container-color);
+    text-align: center;
+}
+
+#segundo-encabezado {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: var(--container-color);
+    text-align: center;
+}
+
+#tercer-encabezado {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 100px;
+    color: var(--container-color);
+    text-align: center;
+}
+
+#parrafo-uno {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: var(--container-color);
+    text-align: justify;
+}
+
+#carouselInterval {
+    text-align: center;
+}
+
+#list-example .list-group-item { /* Eliminar color de fondo de la lista de contenido*/
+    background-color: transparent !important;
+    color: var(--container-color);
+    border-color: var(--hg-color);
+}
+
+#list-example {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+#list-item-1, #list-item-2, #list-item-3, #list-item-4, #list-item-5 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 30px;
+    color: var(--container-color);
+    text-align: center;
+}
+
+#parrafo-item-1, #parrafo-item-2, #parrafo-item-3, #parrafo-item-4, #parrafo-item-5 {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    color: var(--hg-color);
+    text-align: justify; 
+}
+
+.list-group, .modal-title {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.modal .btn-primary, .modal .btn-secondary { /* Edita los botones dentro del modal */
     font-family: "Boldonse", system-ui;
-    font-size: 10px;
+    font-size: 12px;
+    /* Centra horizontalmente los botones dentro del modal */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn.btn-primary[data-bs-toggle="modal"] { /* Seleciona el botón de arranque del modal */
+    font-family: "Boldonse", system-ui;
+    font-size: 12px;
+    /* Centra horizontalmente el botón de arranque del modal moviendolo en bloque */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form-label, .form-control {
+    font-family: "Boldonse", system-ui;
+    font-size: 12px;
+    color: var(--container-color);
+}
+
+.form-control::placeholder, #inputState {
+    font-family: "Boldonse", system-ui;
+    color: var(--bg-color) !important;
+    font-size: 12px !important;
+}
+
+.form-check-label {
+    font-family: "Boldonse", system-ui;
+    font-size: 12px;
+    color: var(--container-color);
+    text-align: center;   
+}
+
+.btn.btn-primary {
+    font-family: "Boldonse", system-ui;
+    color: var(--hg-color);
+    /* Centra horizontalmente el botón de enviar */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
