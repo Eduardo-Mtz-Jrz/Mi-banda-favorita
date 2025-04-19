@@ -16,6 +16,6 @@ Herramientas utilizadas:
 
 Vista previa del contenido:
 
-![index]()
-![discografia]()
-![formulario]()
+![index](https://raw.githubusercontent.com/Eduardo-Mtz-Jrz/Mi-banda-favorita/refs/heads/develop/img/index.webp)
+![discografia](https://raw.githubusercontent.com/Eduardo-Mtz-Jrz/Mi-banda-favorita/refs/heads/develop/img/discografia.webp)
+![formulario](https://raw.githubusercontent.com/Eduardo-Mtz-Jrz/Mi-banda-favorita/refs/heads/develop/img/formulario.webp)
