@@ -59,18 +59,31 @@
     </div>
     <div class="row">
         <div class="col">
-            <form class="row g-3">
+            <div class="alert alert-danger fade show" style="display:none;" role="alert" id="alertValidaciones">
+                <!-- Este contenedor nos servira como alerta de que el contenido no es correcto -->
+               <p id="alertValidacionesTexto"></p>
+            </div>
+            <form class="row g-3 needs-validation" novalidate>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2"> <!-- Ajuste de tamañao de columna -->
-                    <label for="inputNombre" class="form-label">Nombre:</label>
-                    <input type="text" class="form-control" id="inputNombre" placeholder="Ejemplo: Fulanito">
+                    <label for="inputNombre" class="form-label">Nombre:</label> 
+                    <input type="text" class="form-control" id="inputNombre" placeholder="Ejemplo: Fulanito" autocomplete="off"> <!-- autocomplete="off" - elimina la aparición de datos anteriormente usados -->
+                    <div class="invalid-feedback">
+                        Recurso Invalido
+                    </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <label for="inputApellido" class="form-label">Apellidos:</label>
-                    <input type="text" class="form-control" id="inputApellido" placeholder="Ejemplo: De Tal">
+                    <input type="text" class="form-control" id="inputApellido" placeholder="Ejemplo: De Tal" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Recurso Invalido
+                    </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <label for="inputEmail" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="inputEmail" placeholder="Ejemplo: fulanito.dt@ejemplo.com">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="Ejemplo: fulanito.dt@ejemplo.com" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Recurso Invalido
+                    </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <label for="inputState" class="form-label">País:</label>
@@ -84,19 +97,31 @@
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <label for="inputCity" class="form-label">Ciudad:</label>
-                    <input type="text" class="form-control" id="inputCity">
+                    <input type="text" class="form-control" id="inputCity" placeholder="Ejemplo: Tangamandapio" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Recurso Invalido
+                    </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <label for="inputCancion" class="form-label">Canción Favorita:</label>
-                    <input type="text" class="form-control" id="inputCancion" placeholder="Ejemplo: Canción para mañana">
+                    <input type="text" class="form-control" id="inputCancion" placeholder="Ejemplo: Canción para mañana" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Recurso Invalido
+                    </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <label for="inputDisco" class="form-label">Disco Favorito:</label>
-                    <input type="text" class="form-control" id="inputDisco" placeholder="Ejemplo: Barrio Estación">
+                    <input type="text" class="form-control" id="inputDisco" placeholder="Ejemplo: Barrio Estación" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Recurso Invalido
+                    </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <label for="inputRecomendaciones" class="form-label">Recomendaciones:</label>
-                    <input type="text" class="form-control" id="inputRecomendaciones">
+                    <input type="text" class="form-control" id="inputRecomendaciones" autocomplete="off">
+                    <div class="invalid-feedback">
+                        Recurso Invalido
+                    </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
                     <div class="form-check">
@@ -107,7 +132,7 @@
                     </div>
                 </div>
                 <div class="col-md-12 mb-3 mb-md-4 mb-lg-2">
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar</button>
                 </div>
             </form>
         </div>
@@ -146,7 +171,10 @@
     </div>
 </div>
 
-    <!-- Bootstrap -->
+<!-- main.js -->
+ <script src="./js/main.js"></script>
+
+<!-- Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
